@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ParkingManagementV3DataSet" targetNamespace="http://tempuri.org/ParkingManagementV3DataSet.xsd" xmlns:mstns="http://tempuri.org/ParkingManagementV3DataSet.xsd" xmlns="http://tempuri.org/ParkingManagementV3DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ParkingManagementV3ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ParkingManagementV3ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Parking_Management_V3.Properties.Settings.GlobalReference.Default.ParkingManagementV3ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CostomerVehicleViewTableAdapter" GeneratorDataComponentClassName="CostomerVehicleViewTableAdapter" Name="CostomerVehicleView" UserDataComponentName="CostomerVehicleViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ParkingManagementV3ConnectionString (Settings)" DbObjectName="ParkingManagementV3.dbo.CostomerVehicleView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT کد, نام, [زمان آمدن], [زمان رفتن], [زمان ماندن], قیمت, طبقه, سطر, ستون, [کد مکان], پلاک FROM dbo.CostomerVehicleView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="کد" DataSetColumn="کد" />
+              <Mapping SourceColumn="نام" DataSetColumn="نام" />
+              <Mapping SourceColumn="زمان آمدن" DataSetColumn="زمان آمدن" />
+              <Mapping SourceColumn="زمان رفتن" DataSetColumn="زمان رفتن" />
+              <Mapping SourceColumn="زمان ماندن" DataSetColumn="زمان ماندن" />
+              <Mapping SourceColumn="قیمت" DataSetColumn="قیمت" />
+              <Mapping SourceColumn="طبقه" DataSetColumn="طبقه" />
+              <Mapping SourceColumn="سطر" DataSetColumn="سطر" />
+              <Mapping SourceColumn="ستون" DataSetColumn="ستون" />
+              <Mapping SourceColumn="کد مکان" DataSetColumn="کد مکان" />
+              <Mapping SourceColumn="پلاک" DataSetColumn="پلاک" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ParkingManagementV3DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ParkingManagementV3DataSet" msprop:Generator_UserDSName="ParkingManagementV3DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CostomerVehicleView" msprop:Generator_TableClassName="CostomerVehicleViewDataTable" msprop:Generator_TableVarName="tableCostomerVehicleView" msprop:Generator_TablePropName="CostomerVehicleView" msprop:Generator_RowDeletingName="CostomerVehicleViewRowDeleting" msprop:Generator_RowChangingName="CostomerVehicleViewRowChanging" msprop:Generator_RowEvHandlerName="CostomerVehicleViewRowChangeEventHandler" msprop:Generator_RowDeletedName="CostomerVehicleViewRowDeleted" msprop:Generator_UserTableName="CostomerVehicleView" msprop:Generator_RowChangedName="CostomerVehicleViewRowChanged" msprop:Generator_RowEvArgName="CostomerVehicleViewRowChangeEvent" msprop:Generator_RowClassName="CostomerVehicleViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="کد" msprop:Generator_ColumnVarNameInTable="columnکد" msprop:Generator_ColumnPropNameInRow="کد" msprop:Generator_ColumnPropNameInTable="کدColumn" msprop:Generator_UserColumnName="کد" type="xs:int" />
+              <xs:element name="نام" msprop:Generator_ColumnVarNameInTable="columnنام" msprop:Generator_ColumnPropNameInRow="نام" msprop:Generator_ColumnPropNameInTable="نامColumn" msprop:Generator_UserColumnName="نام">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="زمان_x0020_آمدن" msprop:Generator_ColumnVarNameInTable="columnزمان_آمدن" msprop:Generator_ColumnPropNameInRow="زمان_آمدن" msprop:Generator_ColumnPropNameInTable="زمان_آمدنColumn" msprop:Generator_UserColumnName="زمان آمدن" type="xs:dateTime" />
+              <xs:element name="زمان_x0020_رفتن" msprop:Generator_ColumnVarNameInTable="columnزمان_رفتن" msprop:Generator_ColumnPropNameInRow="زمان_رفتن" msprop:Generator_ColumnPropNameInTable="زمان_رفتنColumn" msprop:Generator_UserColumnName="زمان رفتن" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="زمان_x0020_ماندن" msprop:Generator_ColumnVarNameInTable="columnزمان_ماندن" msprop:Generator_ColumnPropNameInRow="زمان_ماندن" msprop:Generator_ColumnPropNameInTable="زمان_ماندنColumn" msprop:Generator_UserColumnName="زمان ماندن" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="قیمت" msprop:Generator_ColumnVarNameInTable="columnقیمت" msprop:Generator_ColumnPropNameInRow="قیمت" msprop:Generator_ColumnPropNameInTable="قیمتColumn" msprop:Generator_UserColumnName="قیمت" type="xs:long" minOccurs="0" />
+              <xs:element name="طبقه" msprop:Generator_ColumnVarNameInTable="columnطبقه" msprop:Generator_ColumnPropNameInRow="طبقه" msprop:Generator_ColumnPropNameInTable="طبقهColumn" msprop:Generator_UserColumnName="طبقه" type="xs:int" />
+              <xs:element name="سطر" msprop:Generator_ColumnVarNameInTable="columnسطر" msprop:Generator_ColumnPropNameInRow="سطر" msprop:Generator_ColumnPropNameInTable="سطرColumn" msprop:Generator_UserColumnName="سطر" type="xs:int" />
+              <xs:element name="ستون" msprop:Generator_ColumnVarNameInTable="columnستون" msprop:Generator_ColumnPropNameInRow="ستون" msprop:Generator_ColumnPropNameInTable="ستونColumn" msprop:Generator_UserColumnName="ستون" type="xs:int" />
+              <xs:element name="کد_x0020_مکان" msprop:Generator_ColumnVarNameInTable="columnکد_مکان" msprop:Generator_ColumnPropNameInRow="کد_مکان" msprop:Generator_ColumnPropNameInTable="کد_مکانColumn" msprop:Generator_UserColumnName="کد مکان">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="7" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="پلاک" msprop:Generator_ColumnVarNameInTable="columnپلاک" msprop:Generator_ColumnPropNameInRow="پلاک" msprop:Generator_ColumnPropNameInTable="پلاکColumn" msprop:Generator_UserColumnName="پلاک">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

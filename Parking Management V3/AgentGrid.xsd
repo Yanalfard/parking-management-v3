@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AgentGrid" targetNamespace="http://tempuri.org/AgentGrid.xsd" xmlns:mstns="http://tempuri.org/AgentGrid.xsd" xmlns="http://tempuri.org/AgentGrid.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ParkingManagementV3ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ParkingManagementV3ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Parking_Management_V3.Properties.Settings.GlobalReference.Default.ParkingManagementV3ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="AgentViewTableAdapter" GeneratorDataComponentClassName="AgentViewTableAdapter" Name="AgentView" UserDataComponentName="AgentViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ParkingManagementV3ConnectionString (Settings)" DbObjectName="ParkingManagementV3.dbo.AgentView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT کد, [کد ملی], نام, [نام خانوادگی], [نام کاربری], [رمز عبور], [محل عکس] FROM dbo.AgentView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="کد" DataSetColumn="کد" />
+              <Mapping SourceColumn="کد ملی" DataSetColumn="کد ملی" />
+              <Mapping SourceColumn="نام" DataSetColumn="نام" />
+              <Mapping SourceColumn="نام خانوادگی" DataSetColumn="نام خانوادگی" />
+              <Mapping SourceColumn="نام کاربری" DataSetColumn="نام کاربری" />
+              <Mapping SourceColumn="رمز عبور" DataSetColumn="رمز عبور" />
+              <Mapping SourceColumn="محل عکس" DataSetColumn="محل عکس" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AgentGrid" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="AgentGrid" msprop:Generator_UserDSName="AgentGrid">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="AgentView" msprop:Generator_TableClassName="AgentViewDataTable" msprop:Generator_TableVarName="tableAgentView" msprop:Generator_TablePropName="AgentView" msprop:Generator_RowDeletingName="AgentViewRowDeleting" msprop:Generator_RowChangingName="AgentViewRowChanging" msprop:Generator_RowEvHandlerName="AgentViewRowChangeEventHandler" msprop:Generator_RowDeletedName="AgentViewRowDeleted" msprop:Generator_UserTableName="AgentView" msprop:Generator_RowChangedName="AgentViewRowChanged" msprop:Generator_RowEvArgName="AgentViewRowChangeEvent" msprop:Generator_RowClassName="AgentViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="کد" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnکد" msprop:Generator_ColumnPropNameInRow="کد" msprop:Generator_ColumnPropNameInTable="کدColumn" msprop:Generator_UserColumnName="کد" type="xs:int" />
+              <xs:element name="کد_x0020_ملی" msprop:Generator_ColumnVarNameInTable="columnکد_ملی" msprop:Generator_ColumnPropNameInRow="کد_ملی" msprop:Generator_ColumnPropNameInTable="کد_ملیColumn" msprop:Generator_UserColumnName="کد ملی" type="xs:long" />
+              <xs:element name="نام" msprop:Generator_ColumnVarNameInTable="columnنام" msprop:Generator_ColumnPropNameInRow="نام" msprop:Generator_ColumnPropNameInTable="نامColumn" msprop:Generator_UserColumnName="نام">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="نام_x0020_خانوادگی" msprop:Generator_ColumnVarNameInTable="columnنام_خانوادگی" msprop:Generator_ColumnPropNameInRow="نام_خانوادگی" msprop:Generator_ColumnPropNameInTable="نام_خانوادگیColumn" msprop:Generator_UserColumnName="نام خانوادگی">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="نام_x0020_کاربری" msprop:Generator_ColumnVarNameInTable="columnنام_کاربری" msprop:Generator_ColumnPropNameInRow="نام_کاربری" msprop:Generator_ColumnPropNameInTable="نام_کاربریColumn" msprop:Generator_UserColumnName="نام کاربری">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="رمز_x0020_عبور" msprop:Generator_ColumnVarNameInTable="columnرمز_عبور" msprop:Generator_ColumnPropNameInRow="رمز_عبور" msprop:Generator_ColumnPropNameInTable="رمز_عبورColumn" msprop:Generator_UserColumnName="رمز عبور">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="محل_x0020_عکس" msprop:Generator_ColumnVarNameInTable="columnمحل_عکس" msprop:Generator_ColumnPropNameInRow="محل_عکس" msprop:Generator_ColumnPropNameInTable="محل_عکسColumn" msprop:Generator_UserColumnName="محل عکس" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

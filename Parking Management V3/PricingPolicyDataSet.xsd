@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PricingPolicyDataSet" targetNamespace="http://tempuri.org/PricingPolicyDataSet.xsd" xmlns:mstns="http://tempuri.org/PricingPolicyDataSet.xsd" xmlns="http://tempuri.org/PricingPolicyDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ParkingManagementV3ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ParkingManagementV3ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Parking_Management_V3.Properties.Settings.GlobalReference.Default.ParkingManagementV3ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PricingPolicyViewTableAdapter" GeneratorDataComponentClassName="PricingPolicyViewTableAdapter" Name="PricingPolicyView" UserDataComponentName="PricingPolicyViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ParkingManagementV3ConnectionString (Settings)" DbObjectName="ParkingManagementV3.dbo.PricingPolicyView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT کد, [نام تعرفه], ورودیه, [قیمت هر ساعت], توضیحات FROM dbo.PricingPolicyView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="کد" DataSetColumn="کد" />
+              <Mapping SourceColumn="نام تعرفه" DataSetColumn="نام تعرفه" />
+              <Mapping SourceColumn="ورودیه" DataSetColumn="ورودیه" />
+              <Mapping SourceColumn="قیمت هر ساعت" DataSetColumn="قیمت هر ساعت" />
+              <Mapping SourceColumn="توضیحات" DataSetColumn="توضیحات" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PricingPolicyDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="PricingPolicyDataSet" msprop:Generator_UserDSName="PricingPolicyDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PricingPolicyView" msprop:Generator_TableClassName="PricingPolicyViewDataTable" msprop:Generator_TableVarName="tablePricingPolicyView" msprop:Generator_TablePropName="PricingPolicyView" msprop:Generator_RowDeletingName="PricingPolicyViewRowDeleting" msprop:Generator_RowChangingName="PricingPolicyViewRowChanging" msprop:Generator_RowEvHandlerName="PricingPolicyViewRowChangeEventHandler" msprop:Generator_RowDeletedName="PricingPolicyViewRowDeleted" msprop:Generator_UserTableName="PricingPolicyView" msprop:Generator_RowChangedName="PricingPolicyViewRowChanged" msprop:Generator_RowEvArgName="PricingPolicyViewRowChangeEvent" msprop:Generator_RowClassName="PricingPolicyViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="کد" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnکد" msprop:Generator_ColumnPropNameInRow="کد" msprop:Generator_ColumnPropNameInTable="کدColumn" msprop:Generator_UserColumnName="کد" type="xs:int" />
+              <xs:element name="نام_x0020_تعرفه" msprop:Generator_ColumnVarNameInTable="columnنام_تعرفه" msprop:Generator_ColumnPropNameInRow="نام_تعرفه" msprop:Generator_ColumnPropNameInTable="نام_تعرفهColumn" msprop:Generator_UserColumnName="نام تعرفه">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ورودیه" msprop:Generator_ColumnVarNameInTable="columnورودیه" msprop:Generator_ColumnPropNameInRow="ورودیه" msprop:Generator_ColumnPropNameInTable="ورودیهColumn" msprop:Generator_UserColumnName="ورودیه" type="xs:long" />
+              <xs:element name="قیمت_x0020_هر_x0020_ساعت" msprop:Generator_ColumnVarNameInTable="columnقیمت_هر_ساعت" msprop:Generator_ColumnPropNameInRow="قیمت_هر_ساعت" msprop:Generator_ColumnPropNameInTable="قیمت_هر_ساعتColumn" msprop:Generator_UserColumnName="قیمت هر ساعت" type="xs:long" />
+              <xs:element name="توضیحات" msprop:Generator_ColumnVarNameInTable="columnتوضیحات" msprop:Generator_ColumnPropNameInRow="توضیحات" msprop:Generator_ColumnPropNameInTable="توضیحاتColumn" msprop:Generator_UserColumnName="توضیحات" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

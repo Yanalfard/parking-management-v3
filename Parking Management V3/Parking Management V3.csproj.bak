@@ -1,0 +1,531 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.props" Condition="Exists('..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F6C4AFCF-ADCA-4FC0-841C-DEF904A7471B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Parking_Management_V3</RootNamespace>
+    <AssemblyName>Parking Management V3</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>parking-car %281%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v18.2" />
+    <Reference Include="DevExpress.Charts.v18.2.Core, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v18.2" />
+    <Reference Include="DevExpress.DataAccess.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dialogs.v18.2.Core, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v18.2.Core, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v18.2.Core, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v18.2.Core, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.2" />
+    <Reference Include="DevExpress.Sparkline.v18.2.Core" />
+    <Reference Include="DevExpress.Xpo.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v18.2.UI, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v18.2.Wizard, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraDialogs.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.2" />
+    <Reference Include="DevExpress.Printing.v18.2.Core" />
+    <Reference Include="DevExpress.XtraGrid.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v18.2.Core, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MSTest.TestFramework.1.3.2\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MSTest.TestFramework.1.3.2\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VisualEffects">
+      <HintPath>..\..\..\..\..\Desktop\VisualEffects\obj\Debug\VisualEffects.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgentGrid.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AgentGrid.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\Controllers\AgentProvider.cs" />
+    <Compile Include="Controllers\Controllers\CostomerVehicleProvider.cs" />
+    <Compile Include="Controllers\Controllers\FloorAndSpotProvider.cs" />
+    <Compile Include="Controllers\Controllers\PricingPolicyProvider.cs" />
+    <Compile Include="Controllers\Controllers\SourceProvider.cs" />
+    <Compile Include="Controllers\Heart.cs" />
+    <Compile Include="Controllers\Interfaces\IAgent.cs" />
+    <Compile Include="Controllers\Interfaces\ICostomerVehicle.cs" />
+    <Compile Include="Controllers\Interfaces\IFloorAndSpot.cs" />
+    <Compile Include="Controllers\Interfaces\IPricingPolicy.cs" />
+    <Compile Include="Controllers\Interfaces\ISetting.cs" />
+    <Compile Include="Controllers\Interfaces\ITblProgramm.cs" />
+    <Compile Include="Controllers\Interfaces\ITblSource.cs" />
+    <Compile Include="Controllers\Interfaces\ITblVip.cs" />
+    <Compile Include="Controllers\MethodRepo.cs" />
+    <Compile Include="Controllers\Controllers\ProgrammProvider.cs" />
+    <Compile Include="Controllers\Controllers\VipProvider.cs" />
+    <Compile Include="Models\TblCostomerVehicleSearchView.cs" />
+    <Compile Include="Models\TblPricingPolicy.cs" />
+    <Compile Include="ParkingManagementV3DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ParkingManagementV3DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PricingPolicyDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PricingPolicyDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\DsTables.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsTables.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\MainProvider.cs" />
+    <Compile Include="Controllers\Controllers\SettingProvider.cs" />
+    <Compile Include="Models\TblAgent.cs" />
+    <Compile Include="Models\TblCostomerVehicle.cs" />
+    <Compile Include="Models\TblFloor_i.cs" />
+    <Compile Include="Models\TblProgramm.cs" />
+    <Compile Include="Models\TblVip.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\AddAgent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AddAgent.Designer.cs">
+      <DependentUpon>AddAgent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddCostomerVehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AddCostomerVehicle.Designer.cs">
+      <DependentUpon>AddCostomerVehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddProgrammForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AddProgrammForm.Designer.cs">
+      <DependentUpon>AddProgrammForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddVip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AddVip.Designer.cs">
+      <DependentUpon>AddVip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AgentControlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AgentControlForm.Designer.cs">
+      <DependentUpon>AgentControlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BackGroundControll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\BackGroundControll.Designer.cs">
+      <DependentUpon>BackGroundControll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CostomerVehicleControlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CostomerVehicleControlForm.Designer.cs">
+      <DependentUpon>CostomerVehicleControlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FirstTimeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FirstTimeForm.Designer.cs">
+      <DependentUpon>FirstTimeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FloorSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FloorSetting.Designer.cs">
+      <DependentUpon>FloorSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FundCalcForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FundCalcForm.Designer.cs">
+      <DependentUpon>FundCalcForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FundCalcVipForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FundCalcVipForm.Designer.cs">
+      <DependentUpon>FundCalcVipForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FundControllForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FundControllForm.Designer.cs">
+      <DependentUpon>FundControllForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\InfoCondfirmationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\InfoCondfirmationForm.Designer.cs">
+      <DependentUpon>InfoCondfirmationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LastInfoCondfirmationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LastInfoCondfirmationForm.Designer.cs">
+      <DependentUpon>LastInfoCondfirmationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LevelUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LevelUpForm.Designer.cs">
+      <DependentUpon>LevelUpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LicenceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LicenceForm.Designer.cs">
+      <DependentUpon>LicenceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainAppMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MainAppMenu.Designer.cs">
+      <DependentUpon>MainAppMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PricingPolicyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\PricingPolicyForm.Designer.cs">
+      <DependentUpon>PricingPolicyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PrinterSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\PrinterSettings.Designer.cs">
+      <DependentUpon>PrinterSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProgrammForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ProgrammForm.Designer.cs">
+      <DependentUpon>ProgrammForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RestorSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\RestorSetting.Designer.cs">
+      <DependentUpon>RestorSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SettingCondfirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SettingCondfirmation.Designer.cs">
+      <DependentUpon>SettingCondfirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SettingMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SettingMenu.Designer.cs">
+      <DependentUpon>SettingMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SignForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SignForm.Designer.cs">
+      <DependentUpon>SignForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SpotSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SpotSetting.Designer.cs">
+      <DependentUpon>SpotSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ThemSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ThemSetting.Designer.cs">
+      <DependentUpon>ThemSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\VipControlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\VipControlForm.Designer.cs">
+      <DependentUpon>VipControlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VipGrid.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VipGrid.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AddAgent.resx">
+      <DependentUpon>AddAgent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AddCostomerVehicle.resx">
+      <DependentUpon>AddCostomerVehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AddProgrammForm.resx">
+      <DependentUpon>AddProgrammForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AddVip.resx">
+      <DependentUpon>AddVip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AgentControlForm.resx">
+      <DependentUpon>AgentControlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\BackGroundControll.fa-IR.resx">
+      <DependentUpon>BackGroundControll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\BackGroundControll.resx">
+      <DependentUpon>BackGroundControll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CostomerVehicleControlForm.resx">
+      <DependentUpon>CostomerVehicleControlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FirstTimeForm.resx">
+      <DependentUpon>FirstTimeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FloorSetting.resx">
+      <DependentUpon>FloorSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FundCalcForm.resx">
+      <DependentUpon>FundCalcForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FundCalcVipForm.resx">
+      <DependentUpon>FundCalcVipForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FundControllForm.resx">
+      <DependentUpon>FundControllForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\InfoCondfirmationForm.resx">
+      <DependentUpon>InfoCondfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LastInfoCondfirmationForm.resx">
+      <DependentUpon>LastInfoCondfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LevelUpForm.resx">
+      <DependentUpon>LevelUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LicenceForm.resx">
+      <DependentUpon>LicenceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MainAppMenu.resx">
+      <DependentUpon>MainAppMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PricingPolicyForm.resx">
+      <DependentUpon>PricingPolicyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PrinterSettings.resx">
+      <DependentUpon>PrinterSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProgrammForm.resx">
+      <DependentUpon>ProgrammForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\RestorSetting.resx">
+      <DependentUpon>RestorSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SettingCondfirmation.resx">
+      <DependentUpon>SettingCondfirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SettingMenu.resx">
+      <DependentUpon>SettingMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SignForm.resx">
+      <DependentUpon>SignForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SpotSetting.resx">
+      <DependentUpon>SpotSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ThemSetting.resx">
+      <DependentUpon>ThemSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\VipControlForm.resx">
+      <DependentUpon>VipControlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="AgentGrid.xsc">
+      <DependentUpon>AgentGrid.xsd</DependentUpon>
+    </None>
+    <None Include="AgentGrid.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AgentGrid.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AgentGrid.xss">
+      <DependentUpon>AgentGrid.xsd</DependentUpon>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="ParkingManagementV3DataSet.xsc">
+      <DependentUpon>ParkingManagementV3DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ParkingManagementV3DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ParkingManagementV3DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ParkingManagementV3DataSet.xss">
+      <DependentUpon>ParkingManagementV3DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PricingPolicyDataSet.xsc">
+      <DependentUpon>PricingPolicyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PricingPolicyDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PricingPolicyDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PricingPolicyDataSet.xss">
+      <DependentUpon>PricingPolicyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Utility\DsTables.xsc">
+      <DependentUpon>DsTables.xsd</DependentUpon>
+    </None>
+    <None Include="Utility\DsTables.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsTables.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Utility\DsTables.xss">
+      <DependentUpon>DsTables.xsd</DependentUpon>
+    </None>
+    <None Include="VipGrid.xsc">
+      <DependentUpon>VipGrid.xsd</DependentUpon>
+    </None>
+    <None Include="VipGrid.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VipGrid.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VipGrid.xss">
+      <DependentUpon>VipGrid.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="parking-car %281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.props'))" />
+    <Error Condition="!Exists('..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.targets'))" />
+  </Target>
+  <Import Project="..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.targets" Condition="Exists('..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
